@@ -2,4 +2,5 @@
 - link: 
    ~/.zsh: zsh/
    ~/.zshrc: zshrc
+   ~/.Xresources: Xresources
 - shell: []
