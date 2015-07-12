@@ -10,11 +10,13 @@ source ~/.zsh/settings.zsh
 # Antigen packages
 
 antigen use oh-my-zsh
-antigen bundle git
-antigen bundle pip
-antigen bundle command-not-found
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundles <<EOBUNDLES
+git
+pip
+command-not-found
 
+zsh-users/zsh-syntax-highlighting
+
+EOBUNDLES
 antigen theme ys
-
 antigen apply
