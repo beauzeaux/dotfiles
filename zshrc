@@ -5,7 +5,14 @@ zstyle :compinstall filename '/home/beauzeaux/.zshrc'
 
 source /usr/share/zsh/scripts/antigen/antigen.zsh
 
-source ~/.zsh/settings.zsh
+# source ~/.zsh/settings.zsh
+
+# Load all files from ~/.zshrc.d (thanks to chr4.org)
+if [ -d $HOME/.zshrc.d/ ]; then
+    for file in $HOME/.zshrc.d/*.zsh; do
+        source $file
+    done
+fi
 
 # Antigen packages
 
