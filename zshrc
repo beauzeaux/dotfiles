@@ -25,5 +25,5 @@ command-not-found
 zsh-users/zsh-syntax-highlighting
 
 EOBUNDLES
-antigen theme ys
+antigen theme agnoster
 antigen apply
